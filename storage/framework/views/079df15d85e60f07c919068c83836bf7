@@ -1,0 +1,51 @@
+<?php $__env->startSection('content'); ?>
+	<div class="row">
+
+		<div class="col-md-10 col-md-offset-1">
+
+			<div class="panel panel-default">
+				<div class="panel-heading">Dashboard Edit</div>
+
+				<div class="panel-body" align="center">
+					Описание отеля
+
+				</div>
+
+
+				<div class="panel-body">
+					<?php echo Form::model($hotel, ['url'=> 'dashboard/update/' . $hotel->id, 'method'=>'PATCH']); ?>
+
+
+					<div class="form-group"> 
+
+					<?php echo Form::text('title', null, ['class'=> 'form-control']); ?>
+
+					</div>
+					<div class="form-group"> 
+
+					<?php echo Form::textarea('description', null, ['class'=> 'form-control']); ?>
+
+					</div>
+					<div class="form-group"> 
+
+					<?php echo Form::text('image', null, ['class'=> 'form-control']); ?> 
+					</div>
+
+					<div class="form-group" align="right">
+					<?php echo Form::submit('Изменить', ['class'=> 'btn btn-primary']); ?>
+
+					<?php echo Form::submit('Добавить отель', ['class'=> 'btn btn-primary']); ?>
+
+					</div>
+
+					<?php echo Form::close(); ?>
+
+					
+				</div>
+			</div><!-- panel -->
+
+		</div><!-- col-md-10 -->
+
+	</div><!-- row -->
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

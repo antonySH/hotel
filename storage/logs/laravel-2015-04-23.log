@@ -1,0 +1,851 @@
+[2015-04-23 07:45:22] local.ERROR: exception 'BadMethodCallException' with message 'Method [edit] does not exist.' in /home/user/projects/laravel/Hotel/vendor/compiled.php:8346
+Stack trace:
+#0 [internal function]: Illuminate\Routing\Controller->__call('edit', Array)
+#1 [internal function]: App\Http\Controllers\DashboardController->edit()
+#2 /home/user/projects/laravel/Hotel/vendor/compiled.php(8338): call_user_func_array(Array, Array)
+#3 /home/user/projects/laravel/Hotel/vendor/compiled.php(8405): Illuminate\Routing\Controller->callAction('edit', Array)
+#4 /home/user/projects/laravel/Hotel/vendor/compiled.php(8384): Illuminate\Routing\ControllerDispatcher->call(Object(App\Http\Controllers\DashboardController), Object(Illuminate\Routing\Route), 'edit')
+#5 [internal function]: Illuminate\Routing\ControllerDispatcher->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#6 /home/user/projects/laravel/Hotel/vendor/compiled.php(9003): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#7 /home/user/projects/laravel/Hotel/app/Http/Middleware/Authenticate.php(47): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#8 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): App\Http\Middleware\Authenticate->handle(Object(Illuminate\Http\Request), Object(Closure))
+#9 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#10 /home/user/projects/laravel/Hotel/vendor/compiled.php(8986): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#11 /home/user/projects/laravel/Hotel/vendor/compiled.php(8385): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#12 /home/user/projects/laravel/Hotel/vendor/compiled.php(8371): Illuminate\Routing\ControllerDispatcher->callWithinStack(Object(App\Http\Controllers\DashboardController), Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'edit')
+#13 /home/user/projects/laravel/Hotel/vendor/compiled.php(7368): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'App\\Http\\Contro...', 'edit')
+#14 /home/user/projects/laravel/Hotel/vendor/compiled.php(7339): Illuminate\Routing\Route->runWithCustomDispatcher(Object(Illuminate\Http\Request))
+#15 /home/user/projects/laravel/Hotel/vendor/compiled.php(7005): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#17 /home/user/projects/laravel/Hotel/vendor/compiled.php(9003): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#18 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#19 /home/user/projects/laravel/Hotel/vendor/compiled.php(8986): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#20 /home/user/projects/laravel/Hotel/vendor/compiled.php(7006): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#21 /home/user/projects/laravel/Hotel/vendor/compiled.php(6995): Illuminate\Routing\Router->runRouteWithinStack(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#22 /home/user/projects/laravel/Hotel/vendor/compiled.php(6980): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#23 /home/user/projects/laravel/Hotel/vendor/compiled.php(1974): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#24 [internal function]: Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}(Object(Illuminate\Http\Request))
+#25 /home/user/projects/laravel/Hotel/vendor/compiled.php(9003): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#26 /home/user/projects/laravel/Hotel/vendor/compiled.php(2477): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#27 /home/user/projects/laravel/Hotel/app/Http/Middleware/VerifyCsrfToken.php(17): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#28 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): App\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#29 /home/user/projects/laravel/Hotel/vendor/compiled.php(12131): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#30 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\View\Middleware\ShareErrorsFromSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#31 /home/user/projects/laravel/Hotel/vendor/compiled.php(10833): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#32 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Session\Middleware\StartSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#33 /home/user/projects/laravel/Hotel/vendor/compiled.php(11837): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#34 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle(Object(Illuminate\Http\Request), Object(Closure))
+#35 /home/user/projects/laravel/Hotel/vendor/compiled.php(11786): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#36 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#37 /home/user/projects/laravel/Hotel/vendor/compiled.php(2517): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#38 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#39 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#40 /home/user/projects/laravel/Hotel/vendor/compiled.php(8986): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#41 /home/user/projects/laravel/Hotel/vendor/compiled.php(1930): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#42 /home/user/projects/laravel/Hotel/vendor/compiled.php(1917): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#43 /home/user/projects/laravel/Hotel/public/index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#44 /home/user/projects/laravel/Hotel/server.php(21): require_once('/home/user/proj...')
+#45 {main}  
+[2015-04-23 07:45:22] local.ERROR: Debugbar exception: Method App\Http\Controllers\DashboardController::edit() does not exist  
+[2015-04-23 07:45:32] local.ERROR: exception 'BadMethodCallException' with message 'Method [edit] does not exist.' in /home/user/projects/laravel/Hotel/vendor/compiled.php:8346
+Stack trace:
+#0 [internal function]: Illuminate\Routing\Controller->__call('edit', Array)
+#1 [internal function]: App\Http\Controllers\DashboardController->edit()
+#2 /home/user/projects/laravel/Hotel/vendor/compiled.php(8338): call_user_func_array(Array, Array)
+#3 /home/user/projects/laravel/Hotel/vendor/compiled.php(8405): Illuminate\Routing\Controller->callAction('edit', Array)
+#4 /home/user/projects/laravel/Hotel/vendor/compiled.php(8384): Illuminate\Routing\ControllerDispatcher->call(Object(App\Http\Controllers\DashboardController), Object(Illuminate\Routing\Route), 'edit')
+#5 [internal function]: Illuminate\Routing\ControllerDispatcher->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#6 /home/user/projects/laravel/Hotel/vendor/compiled.php(9003): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#7 /home/user/projects/laravel/Hotel/app/Http/Middleware/Authenticate.php(47): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#8 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): App\Http\Middleware\Authenticate->handle(Object(Illuminate\Http\Request), Object(Closure))
+#9 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#10 /home/user/projects/laravel/Hotel/vendor/compiled.php(8986): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#11 /home/user/projects/laravel/Hotel/vendor/compiled.php(8385): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#12 /home/user/projects/laravel/Hotel/vendor/compiled.php(8371): Illuminate\Routing\ControllerDispatcher->callWithinStack(Object(App\Http\Controllers\DashboardController), Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'edit')
+#13 /home/user/projects/laravel/Hotel/vendor/compiled.php(7368): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'App\\Http\\Contro...', 'edit')
+#14 /home/user/projects/laravel/Hotel/vendor/compiled.php(7339): Illuminate\Routing\Route->runWithCustomDispatcher(Object(Illuminate\Http\Request))
+#15 /home/user/projects/laravel/Hotel/vendor/compiled.php(7005): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#17 /home/user/projects/laravel/Hotel/vendor/compiled.php(9003): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#18 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#19 /home/user/projects/laravel/Hotel/vendor/compiled.php(8986): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#20 /home/user/projects/laravel/Hotel/vendor/compiled.php(7006): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#21 /home/user/projects/laravel/Hotel/vendor/compiled.php(6995): Illuminate\Routing\Router->runRouteWithinStack(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#22 /home/user/projects/laravel/Hotel/vendor/compiled.php(6980): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#23 /home/user/projects/laravel/Hotel/vendor/compiled.php(1974): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#24 [internal function]: Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}(Object(Illuminate\Http\Request))
+#25 /home/user/projects/laravel/Hotel/vendor/compiled.php(9003): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#26 /home/user/projects/laravel/Hotel/vendor/compiled.php(2477): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#27 /home/user/projects/laravel/Hotel/app/Http/Middleware/VerifyCsrfToken.php(17): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#28 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): App\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#29 /home/user/projects/laravel/Hotel/vendor/compiled.php(12131): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#30 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\View\Middleware\ShareErrorsFromSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#31 /home/user/projects/laravel/Hotel/vendor/compiled.php(10833): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#32 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Session\Middleware\StartSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#33 /home/user/projects/laravel/Hotel/vendor/compiled.php(11837): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#34 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle(Object(Illuminate\Http\Request), Object(Closure))
+#35 /home/user/projects/laravel/Hotel/vendor/compiled.php(11786): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#36 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#37 /home/user/projects/laravel/Hotel/vendor/compiled.php(2517): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#38 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#39 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#40 /home/user/projects/laravel/Hotel/vendor/compiled.php(8986): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#41 /home/user/projects/laravel/Hotel/vendor/compiled.php(1930): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#42 /home/user/projects/laravel/Hotel/vendor/compiled.php(1917): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#43 /home/user/projects/laravel/Hotel/public/index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#44 /home/user/projects/laravel/Hotel/server.php(21): require_once('/home/user/proj...')
+#45 {main}  
+[2015-04-23 07:45:32] local.ERROR: Debugbar exception: Method App\Http\Controllers\DashboardController::edit() does not exist  
+[2015-04-23 08:02:14] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:30
+Stack trace:
+#0 {main}  
+[2015-04-23 08:02:14] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:30
+Stack trace:
+#0 {main}  
+[2015-04-23 08:02:14] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:30
+Stack trace:
+#0 {main}  
+[2015-04-23 08:02:14] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:30
+Stack trace:
+#0 {main}  
+[2015-04-23 08:02:14] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:30
+Stack trace:
+#0 {main}  
+[2015-04-23 08:02:14] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:30
+Stack trace:
+#0 {main}  
+[2015-04-23 08:02:14] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:30
+Stack trace:
+#0 {main}  
+[2015-04-23 08:02:14] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:30
+Stack trace:
+#0 {main}  
+[2015-04-23 08:02:14] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:30
+Stack trace:
+#0 {main}  
+[2015-04-23 08:02:14] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:30
+Stack trace:
+#0 {main}  
+[2015-04-23 08:02:14] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:30
+Stack trace:
+#0 {main}  
+[2015-04-23 08:02:14] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:30
+Stack trace:
+#0 {main}  
+[2015-04-23 08:02:14] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:30
+Stack trace:
+#0 {main}  
+[2015-04-23 08:02:14] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:30
+Stack trace:
+#0 {main}  
+[2015-04-23 08:02:14] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:30
+Stack trace:
+#0 {main}  
+[2015-04-23 08:02:14] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:30
+Stack trace:
+#0 {main}  
+[2015-04-23 08:02:14] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:30
+Stack trace:
+#0 {main}  
+[2015-04-23 08:02:14] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:30
+Stack trace:
+#0 {main}  
+[2015-04-23 08:02:14] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:30
+Stack trace:
+#0 {main}  
+[2015-04-23 08:02:14] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:30
+Stack trace:
+#0 {main}  
+[2015-04-23 08:02:14] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:30
+Stack trace:
+#0 {main}  
+[2015-04-23 08:02:50] local.ERROR: exception 'ErrorException' with message 'Missing argument 1 for App\Http\Controllers\DashboardController::edit()' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:26
+Stack trace:
+#0 /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php(26): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Missing argumen...', '/home/user/proj...', 26, Array)
+#1 [internal function]: App\Http\Controllers\DashboardController->edit()
+#2 /home/user/projects/laravel/Hotel/vendor/compiled.php(8338): call_user_func_array(Array, Array)
+#3 /home/user/projects/laravel/Hotel/vendor/compiled.php(8405): Illuminate\Routing\Controller->callAction('edit', Array)
+#4 /home/user/projects/laravel/Hotel/vendor/compiled.php(8384): Illuminate\Routing\ControllerDispatcher->call(Object(App\Http\Controllers\DashboardController), Object(Illuminate\Routing\Route), 'edit')
+#5 [internal function]: Illuminate\Routing\ControllerDispatcher->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#6 /home/user/projects/laravel/Hotel/vendor/compiled.php(9003): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#7 /home/user/projects/laravel/Hotel/app/Http/Middleware/Authenticate.php(47): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#8 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): App\Http\Middleware\Authenticate->handle(Object(Illuminate\Http\Request), Object(Closure))
+#9 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#10 /home/user/projects/laravel/Hotel/vendor/compiled.php(8986): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#11 /home/user/projects/laravel/Hotel/vendor/compiled.php(8385): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#12 /home/user/projects/laravel/Hotel/vendor/compiled.php(8371): Illuminate\Routing\ControllerDispatcher->callWithinStack(Object(App\Http\Controllers\DashboardController), Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'edit')
+#13 /home/user/projects/laravel/Hotel/vendor/compiled.php(7368): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'App\\Http\\Contro...', 'edit')
+#14 /home/user/projects/laravel/Hotel/vendor/compiled.php(7339): Illuminate\Routing\Route->runWithCustomDispatcher(Object(Illuminate\Http\Request))
+#15 /home/user/projects/laravel/Hotel/vendor/compiled.php(7005): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#17 /home/user/projects/laravel/Hotel/vendor/compiled.php(9003): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#18 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#19 /home/user/projects/laravel/Hotel/vendor/compiled.php(8986): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#20 /home/user/projects/laravel/Hotel/vendor/compiled.php(7006): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#21 /home/user/projects/laravel/Hotel/vendor/compiled.php(6995): Illuminate\Routing\Router->runRouteWithinStack(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#22 /home/user/projects/laravel/Hotel/vendor/compiled.php(6980): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#23 /home/user/projects/laravel/Hotel/vendor/compiled.php(1974): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#24 [internal function]: Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}(Object(Illuminate\Http\Request))
+#25 /home/user/projects/laravel/Hotel/vendor/compiled.php(9003): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#26 /home/user/projects/laravel/Hotel/vendor/compiled.php(2477): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#27 /home/user/projects/laravel/Hotel/app/Http/Middleware/VerifyCsrfToken.php(17): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#28 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): App\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#29 /home/user/projects/laravel/Hotel/vendor/compiled.php(12131): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#30 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\View\Middleware\ShareErrorsFromSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#31 /home/user/projects/laravel/Hotel/vendor/compiled.php(10833): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#32 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Session\Middleware\StartSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#33 /home/user/projects/laravel/Hotel/vendor/compiled.php(11837): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#34 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle(Object(Illuminate\Http\Request), Object(Closure))
+#35 /home/user/projects/laravel/Hotel/vendor/compiled.php(11786): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#36 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#37 /home/user/projects/laravel/Hotel/vendor/compiled.php(2517): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#38 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#39 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#40 /home/user/projects/laravel/Hotel/vendor/compiled.php(8986): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#41 /home/user/projects/laravel/Hotel/vendor/compiled.php(1930): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#42 /home/user/projects/laravel/Hotel/vendor/compiled.php(1917): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#43 /home/user/projects/laravel/Hotel/public/index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#44 /home/user/projects/laravel/Hotel/server.php(21): require_once('/home/user/proj...')
+#45 {main}  
+[2015-04-23 08:03:22] local.ERROR: exception 'ErrorException' with message 'Missing argument 1 for App\Http\Controllers\DashboardController::edit()' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:26
+Stack trace:
+#0 /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php(26): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Missing argumen...', '/home/user/proj...', 26, Array)
+#1 [internal function]: App\Http\Controllers\DashboardController->edit()
+#2 /home/user/projects/laravel/Hotel/vendor/compiled.php(8338): call_user_func_array(Array, Array)
+#3 /home/user/projects/laravel/Hotel/vendor/compiled.php(8405): Illuminate\Routing\Controller->callAction('edit', Array)
+#4 /home/user/projects/laravel/Hotel/vendor/compiled.php(8384): Illuminate\Routing\ControllerDispatcher->call(Object(App\Http\Controllers\DashboardController), Object(Illuminate\Routing\Route), 'edit')
+#5 [internal function]: Illuminate\Routing\ControllerDispatcher->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#6 /home/user/projects/laravel/Hotel/vendor/compiled.php(9003): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#7 /home/user/projects/laravel/Hotel/app/Http/Middleware/Authenticate.php(47): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#8 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): App\Http\Middleware\Authenticate->handle(Object(Illuminate\Http\Request), Object(Closure))
+#9 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#10 /home/user/projects/laravel/Hotel/vendor/compiled.php(8986): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#11 /home/user/projects/laravel/Hotel/vendor/compiled.php(8385): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#12 /home/user/projects/laravel/Hotel/vendor/compiled.php(8371): Illuminate\Routing\ControllerDispatcher->callWithinStack(Object(App\Http\Controllers\DashboardController), Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'edit')
+#13 /home/user/projects/laravel/Hotel/vendor/compiled.php(7368): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'App\\Http\\Contro...', 'edit')
+#14 /home/user/projects/laravel/Hotel/vendor/compiled.php(7339): Illuminate\Routing\Route->runWithCustomDispatcher(Object(Illuminate\Http\Request))
+#15 /home/user/projects/laravel/Hotel/vendor/compiled.php(7005): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#17 /home/user/projects/laravel/Hotel/vendor/compiled.php(9003): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#18 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#19 /home/user/projects/laravel/Hotel/vendor/compiled.php(8986): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#20 /home/user/projects/laravel/Hotel/vendor/compiled.php(7006): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#21 /home/user/projects/laravel/Hotel/vendor/compiled.php(6995): Illuminate\Routing\Router->runRouteWithinStack(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#22 /home/user/projects/laravel/Hotel/vendor/compiled.php(6980): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#23 /home/user/projects/laravel/Hotel/vendor/compiled.php(1974): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#24 [internal function]: Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}(Object(Illuminate\Http\Request))
+#25 /home/user/projects/laravel/Hotel/vendor/compiled.php(9003): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#26 /home/user/projects/laravel/Hotel/vendor/compiled.php(2477): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#27 /home/user/projects/laravel/Hotel/app/Http/Middleware/VerifyCsrfToken.php(17): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#28 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): App\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#29 /home/user/projects/laravel/Hotel/vendor/compiled.php(12131): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#30 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\View\Middleware\ShareErrorsFromSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#31 /home/user/projects/laravel/Hotel/vendor/compiled.php(10833): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#32 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Session\Middleware\StartSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#33 /home/user/projects/laravel/Hotel/vendor/compiled.php(11837): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#34 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle(Object(Illuminate\Http\Request), Object(Closure))
+#35 /home/user/projects/laravel/Hotel/vendor/compiled.php(11786): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#36 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#37 /home/user/projects/laravel/Hotel/vendor/compiled.php(2517): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#38 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#39 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#40 /home/user/projects/laravel/Hotel/vendor/compiled.php(8986): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#41 /home/user/projects/laravel/Hotel/vendor/compiled.php(1930): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#42 /home/user/projects/laravel/Hotel/vendor/compiled.php(1917): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#43 /home/user/projects/laravel/Hotel/public/index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#44 /home/user/projects/laravel/Hotel/server.php(21): require_once('/home/user/proj...')
+#45 {main}  
+[2015-04-23 08:04:26] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Http\Controllers\DB' not found' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:29
+Stack trace:
+#0 {main}  
+[2015-04-23 08:04:53] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Http\Controllers\DB' not found' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:29
+Stack trace:
+#0 {main}  
+[2015-04-23 08:05:36] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Http\Controllers\DB' not found' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:29
+Stack trace:
+#0 {main}  
+[2015-04-23 08:08:19] local.ERROR: exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_hotel.item' doesn't exist' in /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Connection.php:288
+Stack trace:
+#0 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(288): PDO->prepare('select * from `...')
+#1 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(612): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select * from `...', Array)
+#2 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(576): Illuminate\Database\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#3 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(293): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#4 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1377): Illuminate\Database\Connection->select('select * from `...', Array, true)
+#5 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1367): Illuminate\Database\Query\Builder->runSelect()
+#6 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1354): Illuminate\Database\Query\Builder->getFresh(Array)
+#7 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1341): Illuminate\Database\Query\Builder->get(Array)
+#8 /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php(31): Illuminate\Database\Query\Builder->first()
+#9 [internal function]: App\Http\Controllers\DashboardController->edit('1')
+#10 /home/user/projects/laravel/Hotel/vendor/compiled.php(8338): call_user_func_array(Array, Array)
+#11 /home/user/projects/laravel/Hotel/vendor/compiled.php(8405): Illuminate\Routing\Controller->callAction('edit', Array)
+#12 /home/user/projects/laravel/Hotel/vendor/compiled.php(8384): Illuminate\Routing\ControllerDispatcher->call(Object(App\Http\Controllers\DashboardController), Object(Illuminate\Routing\Route), 'edit')
+#13 [internal function]: Illuminate\Routing\ControllerDispatcher->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#14 /home/user/projects/laravel/Hotel/vendor/compiled.php(9003): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#15 /home/user/projects/laravel/Hotel/app/Http/Middleware/Authenticate.php(47): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#16 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): App\Http\Middleware\Authenticate->handle(Object(Illuminate\Http\Request), Object(Closure))
+#17 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#18 /home/user/projects/laravel/Hotel/vendor/compiled.php(8986): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#19 /home/user/projects/laravel/Hotel/vendor/compiled.php(8385): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#20 /home/user/projects/laravel/Hotel/vendor/compiled.php(8371): Illuminate\Routing\ControllerDispatcher->callWithinStack(Object(App\Http\Controllers\DashboardController), Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'edit')
+#21 /home/user/projects/laravel/Hotel/vendor/compiled.php(7368): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'App\\Http\\Contro...', 'edit')
+#22 /home/user/projects/laravel/Hotel/vendor/compiled.php(7339): Illuminate\Routing\Route->runWithCustomDispatcher(Object(Illuminate\Http\Request))
+#23 /home/user/projects/laravel/Hotel/vendor/compiled.php(7005): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#24 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#25 /home/user/projects/laravel/Hotel/vendor/compiled.php(9003): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#26 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#27 /home/user/projects/laravel/Hotel/vendor/compiled.php(8986): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#28 /home/user/projects/laravel/Hotel/vendor/compiled.php(7006): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#29 /home/user/projects/laravel/Hotel/vendor/compiled.php(6995): Illuminate\Routing\Router->runRouteWithinStack(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#30 /home/user/projects/laravel/Hotel/vendor/compiled.php(6980): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#31 /home/user/projects/laravel/Hotel/vendor/compiled.php(1974): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#32 [internal function]: Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}(Object(Illuminate\Http\Request))
+#33 /home/user/projects/laravel/Hotel/vendor/compiled.php(9003): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#34 /home/user/projects/laravel/Hotel/vendor/compiled.php(2477): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#35 /home/user/projects/laravel/Hotel/app/Http/Middleware/VerifyCsrfToken.php(17): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#36 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): App\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#37 /home/user/projects/laravel/Hotel/vendor/compiled.php(12131): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#38 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\View\Middleware\ShareErrorsFromSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#39 /home/user/projects/laravel/Hotel/vendor/compiled.php(10833): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#40 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Session\Middleware\StartSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#41 /home/user/projects/laravel/Hotel/vendor/compiled.php(11837): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#42 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle(Object(Illuminate\Http\Request), Object(Closure))
+#43 /home/user/projects/laravel/Hotel/vendor/compiled.php(11786): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#44 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#45 /home/user/projects/laravel/Hotel/vendor/compiled.php(2517): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#46 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#47 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#48 /home/user/projects/laravel/Hotel/vendor/compiled.php(8986): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#49 /home/user/projects/laravel/Hotel/vendor/compiled.php(1930): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#50 /home/user/projects/laravel/Hotel/vendor/compiled.php(1917): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#51 /home/user/projects/laravel/Hotel/public/index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#52 /home/user/projects/laravel/Hotel/server.php(21): require_once('/home/user/proj...')
+#53 {main}
+
+Next exception 'Illuminate\Database\QueryException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_hotel.item' doesn't exist (SQL: select * from `item` where `1` is null limit 1)' in /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Connection.php:620
+Stack trace:
+#0 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(576): Illuminate\Database\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#1 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(293): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#2 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1377): Illuminate\Database\Connection->select('select * from `...', Array, true)
+#3 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1367): Illuminate\Database\Query\Builder->runSelect()
+#4 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1354): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1341): Illuminate\Database\Query\Builder->get(Array)
+#6 /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php(31): Illuminate\Database\Query\Builder->first()
+#7 [internal function]: App\Http\Controllers\DashboardController->edit('1')
+#8 /home/user/projects/laravel/Hotel/vendor/compiled.php(8338): call_user_func_array(Array, Array)
+#9 /home/user/projects/laravel/Hotel/vendor/compiled.php(8405): Illuminate\Routing\Controller->callAction('edit', Array)
+#10 /home/user/projects/laravel/Hotel/vendor/compiled.php(8384): Illuminate\Routing\ControllerDispatcher->call(Object(App\Http\Controllers\DashboardController), Object(Illuminate\Routing\Route), 'edit')
+#11 [internal function]: Illuminate\Routing\ControllerDispatcher->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#12 /home/user/projects/laravel/Hotel/vendor/compiled.php(9003): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#13 /home/user/projects/laravel/Hotel/app/Http/Middleware/Authenticate.php(47): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#14 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): App\Http\Middleware\Authenticate->handle(Object(Illuminate\Http\Request), Object(Closure))
+#15 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#16 /home/user/projects/laravel/Hotel/vendor/compiled.php(8986): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#17 /home/user/projects/laravel/Hotel/vendor/compiled.php(8385): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#18 /home/user/projects/laravel/Hotel/vendor/compiled.php(8371): Illuminate\Routing\ControllerDispatcher->callWithinStack(Object(App\Http\Controllers\DashboardController), Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'edit')
+#19 /home/user/projects/laravel/Hotel/vendor/compiled.php(7368): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'App\\Http\\Contro...', 'edit')
+#20 /home/user/projects/laravel/Hotel/vendor/compiled.php(7339): Illuminate\Routing\Route->runWithCustomDispatcher(Object(Illuminate\Http\Request))
+#21 /home/user/projects/laravel/Hotel/vendor/compiled.php(7005): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#22 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#23 /home/user/projects/laravel/Hotel/vendor/compiled.php(9003): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#24 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#25 /home/user/projects/laravel/Hotel/vendor/compiled.php(8986): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#26 /home/user/projects/laravel/Hotel/vendor/compiled.php(7006): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#27 /home/user/projects/laravel/Hotel/vendor/compiled.php(6995): Illuminate\Routing\Router->runRouteWithinStack(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#28 /home/user/projects/laravel/Hotel/vendor/compiled.php(6980): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#29 /home/user/projects/laravel/Hotel/vendor/compiled.php(1974): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#30 [internal function]: Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}(Object(Illuminate\Http\Request))
+#31 /home/user/projects/laravel/Hotel/vendor/compiled.php(9003): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#32 /home/user/projects/laravel/Hotel/vendor/compiled.php(2477): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#33 /home/user/projects/laravel/Hotel/app/Http/Middleware/VerifyCsrfToken.php(17): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#34 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): App\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#35 /home/user/projects/laravel/Hotel/vendor/compiled.php(12131): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#36 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\View\Middleware\ShareErrorsFromSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#37 /home/user/projects/laravel/Hotel/vendor/compiled.php(10833): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#38 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Session\Middleware\StartSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#39 /home/user/projects/laravel/Hotel/vendor/compiled.php(11837): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#40 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle(Object(Illuminate\Http\Request), Object(Closure))
+#41 /home/user/projects/laravel/Hotel/vendor/compiled.php(11786): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#42 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#43 /home/user/projects/laravel/Hotel/vendor/compiled.php(2517): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#44 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#45 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#46 /home/user/projects/laravel/Hotel/vendor/compiled.php(8986): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#47 /home/user/projects/laravel/Hotel/vendor/compiled.php(1930): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#48 /home/user/projects/laravel/Hotel/vendor/compiled.php(1917): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#49 /home/user/projects/laravel/Hotel/public/index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#50 /home/user/projects/laravel/Hotel/server.php(21): require_once('/home/user/proj...')
+#51 {main}  
+[2015-04-23 08:08:52] local.ERROR: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column '1' in 'where clause'' in /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Connection.php:288
+Stack trace:
+#0 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(288): PDO->prepare('select * from `...')
+#1 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(612): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select * from `...', Array)
+#2 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(576): Illuminate\Database\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#3 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(293): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#4 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1377): Illuminate\Database\Connection->select('select * from `...', Array, true)
+#5 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1367): Illuminate\Database\Query\Builder->runSelect()
+#6 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1354): Illuminate\Database\Query\Builder->getFresh(Array)
+#7 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1341): Illuminate\Database\Query\Builder->get(Array)
+#8 /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php(31): Illuminate\Database\Query\Builder->first()
+#9 [internal function]: App\Http\Controllers\DashboardController->edit('1')
+#10 /home/user/projects/laravel/Hotel/vendor/compiled.php(8338): call_user_func_array(Array, Array)
+#11 /home/user/projects/laravel/Hotel/vendor/compiled.php(8405): Illuminate\Routing\Controller->callAction('edit', Array)
+#12 /home/user/projects/laravel/Hotel/vendor/compiled.php(8384): Illuminate\Routing\ControllerDispatcher->call(Object(App\Http\Controllers\DashboardController), Object(Illuminate\Routing\Route), 'edit')
+#13 [internal function]: Illuminate\Routing\ControllerDispatcher->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#14 /home/user/projects/laravel/Hotel/vendor/compiled.php(9003): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#15 /home/user/projects/laravel/Hotel/app/Http/Middleware/Authenticate.php(47): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#16 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): App\Http\Middleware\Authenticate->handle(Object(Illuminate\Http\Request), Object(Closure))
+#17 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#18 /home/user/projects/laravel/Hotel/vendor/compiled.php(8986): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#19 /home/user/projects/laravel/Hotel/vendor/compiled.php(8385): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#20 /home/user/projects/laravel/Hotel/vendor/compiled.php(8371): Illuminate\Routing\ControllerDispatcher->callWithinStack(Object(App\Http\Controllers\DashboardController), Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'edit')
+#21 /home/user/projects/laravel/Hotel/vendor/compiled.php(7368): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'App\\Http\\Contro...', 'edit')
+#22 /home/user/projects/laravel/Hotel/vendor/compiled.php(7339): Illuminate\Routing\Route->runWithCustomDispatcher(Object(Illuminate\Http\Request))
+#23 /home/user/projects/laravel/Hotel/vendor/compiled.php(7005): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#24 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#25 /home/user/projects/laravel/Hotel/vendor/compiled.php(9003): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#26 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#27 /home/user/projects/laravel/Hotel/vendor/compiled.php(8986): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#28 /home/user/projects/laravel/Hotel/vendor/compiled.php(7006): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#29 /home/user/projects/laravel/Hotel/vendor/compiled.php(6995): Illuminate\Routing\Router->runRouteWithinStack(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#30 /home/user/projects/laravel/Hotel/vendor/compiled.php(6980): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#31 /home/user/projects/laravel/Hotel/vendor/compiled.php(1974): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#32 [internal function]: Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}(Object(Illuminate\Http\Request))
+#33 /home/user/projects/laravel/Hotel/vendor/compiled.php(9003): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#34 /home/user/projects/laravel/Hotel/vendor/compiled.php(2477): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#35 /home/user/projects/laravel/Hotel/app/Http/Middleware/VerifyCsrfToken.php(17): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#36 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): App\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#37 /home/user/projects/laravel/Hotel/vendor/compiled.php(12131): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#38 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\View\Middleware\ShareErrorsFromSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#39 /home/user/projects/laravel/Hotel/vendor/compiled.php(10833): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#40 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Session\Middleware\StartSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#41 /home/user/projects/laravel/Hotel/vendor/compiled.php(11837): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#42 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle(Object(Illuminate\Http\Request), Object(Closure))
+#43 /home/user/projects/laravel/Hotel/vendor/compiled.php(11786): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#44 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#45 /home/user/projects/laravel/Hotel/vendor/compiled.php(2517): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#46 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#47 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#48 /home/user/projects/laravel/Hotel/vendor/compiled.php(8986): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#49 /home/user/projects/laravel/Hotel/vendor/compiled.php(1930): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#50 /home/user/projects/laravel/Hotel/vendor/compiled.php(1917): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#51 /home/user/projects/laravel/Hotel/public/index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#52 /home/user/projects/laravel/Hotel/server.php(21): require_once('/home/user/proj...')
+#53 {main}
+
+Next exception 'Illuminate\Database\QueryException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column '1' in 'where clause' (SQL: select * from `items` where `1` is null limit 1)' in /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Connection.php:620
+Stack trace:
+#0 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(576): Illuminate\Database\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#1 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(293): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#2 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1377): Illuminate\Database\Connection->select('select * from `...', Array, true)
+#3 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1367): Illuminate\Database\Query\Builder->runSelect()
+#4 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1354): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1341): Illuminate\Database\Query\Builder->get(Array)
+#6 /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php(31): Illuminate\Database\Query\Builder->first()
+#7 [internal function]: App\Http\Controllers\DashboardController->edit('1')
+#8 /home/user/projects/laravel/Hotel/vendor/compiled.php(8338): call_user_func_array(Array, Array)
+#9 /home/user/projects/laravel/Hotel/vendor/compiled.php(8405): Illuminate\Routing\Controller->callAction('edit', Array)
+#10 /home/user/projects/laravel/Hotel/vendor/compiled.php(8384): Illuminate\Routing\ControllerDispatcher->call(Object(App\Http\Controllers\DashboardController), Object(Illuminate\Routing\Route), 'edit')
+#11 [internal function]: Illuminate\Routing\ControllerDispatcher->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#12 /home/user/projects/laravel/Hotel/vendor/compiled.php(9003): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#13 /home/user/projects/laravel/Hotel/app/Http/Middleware/Authenticate.php(47): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#14 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): App\Http\Middleware\Authenticate->handle(Object(Illuminate\Http\Request), Object(Closure))
+#15 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#16 /home/user/projects/laravel/Hotel/vendor/compiled.php(8986): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#17 /home/user/projects/laravel/Hotel/vendor/compiled.php(8385): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#18 /home/user/projects/laravel/Hotel/vendor/compiled.php(8371): Illuminate\Routing\ControllerDispatcher->callWithinStack(Object(App\Http\Controllers\DashboardController), Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'edit')
+#19 /home/user/projects/laravel/Hotel/vendor/compiled.php(7368): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'App\\Http\\Contro...', 'edit')
+#20 /home/user/projects/laravel/Hotel/vendor/compiled.php(7339): Illuminate\Routing\Route->runWithCustomDispatcher(Object(Illuminate\Http\Request))
+#21 /home/user/projects/laravel/Hotel/vendor/compiled.php(7005): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#22 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#23 /home/user/projects/laravel/Hotel/vendor/compiled.php(9003): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#24 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#25 /home/user/projects/laravel/Hotel/vendor/compiled.php(8986): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#26 /home/user/projects/laravel/Hotel/vendor/compiled.php(7006): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#27 /home/user/projects/laravel/Hotel/vendor/compiled.php(6995): Illuminate\Routing\Router->runRouteWithinStack(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#28 /home/user/projects/laravel/Hotel/vendor/compiled.php(6980): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#29 /home/user/projects/laravel/Hotel/vendor/compiled.php(1974): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#30 [internal function]: Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}(Object(Illuminate\Http\Request))
+#31 /home/user/projects/laravel/Hotel/vendor/compiled.php(9003): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#32 /home/user/projects/laravel/Hotel/vendor/compiled.php(2477): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#33 /home/user/projects/laravel/Hotel/app/Http/Middleware/VerifyCsrfToken.php(17): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#34 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): App\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#35 /home/user/projects/laravel/Hotel/vendor/compiled.php(12131): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#36 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\View\Middleware\ShareErrorsFromSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#37 /home/user/projects/laravel/Hotel/vendor/compiled.php(10833): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#38 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Session\Middleware\StartSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#39 /home/user/projects/laravel/Hotel/vendor/compiled.php(11837): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#40 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle(Object(Illuminate\Http\Request), Object(Closure))
+#41 /home/user/projects/laravel/Hotel/vendor/compiled.php(11786): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#42 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#43 /home/user/projects/laravel/Hotel/vendor/compiled.php(2517): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#44 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#45 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#46 /home/user/projects/laravel/Hotel/vendor/compiled.php(8986): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#47 /home/user/projects/laravel/Hotel/vendor/compiled.php(1930): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#48 /home/user/projects/laravel/Hotel/vendor/compiled.php(1917): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#49 /home/user/projects/laravel/Hotel/public/index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#50 /home/user/projects/laravel/Hotel/server.php(21): require_once('/home/user/proj...')
+#51 {main}  
+[2015-04-23 08:10:30] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '}', expecting ',' or ';'' in /home/user/projects/laravel/Hotel/storage/framework/views/079df15d85e60f07c919068c83836bf7:19
+Stack trace:
+#0 {main}  
+[2015-04-23 08:12:21] local.ERROR: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column '1' in 'where clause'' in /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Connection.php:288
+Stack trace:
+#0 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(288): PDO->prepare('select * from `...')
+#1 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(612): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select * from `...', Array)
+#2 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(576): Illuminate\Database\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#3 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(293): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#4 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1377): Illuminate\Database\Connection->select('select * from `...', Array, true)
+#5 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1367): Illuminate\Database\Query\Builder->runSelect()
+#6 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1354): Illuminate\Database\Query\Builder->getFresh(Array)
+#7 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1341): Illuminate\Database\Query\Builder->get(Array)
+#8 /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php(31): Illuminate\Database\Query\Builder->first()
+#9 [internal function]: App\Http\Controllers\DashboardController->edit('1')
+#10 /home/user/projects/laravel/Hotel/vendor/compiled.php(8338): call_user_func_array(Array, Array)
+#11 /home/user/projects/laravel/Hotel/vendor/compiled.php(8405): Illuminate\Routing\Controller->callAction('edit', Array)
+#12 /home/user/projects/laravel/Hotel/vendor/compiled.php(8384): Illuminate\Routing\ControllerDispatcher->call(Object(App\Http\Controllers\DashboardController), Object(Illuminate\Routing\Route), 'edit')
+#13 [internal function]: Illuminate\Routing\ControllerDispatcher->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#14 /home/user/projects/laravel/Hotel/vendor/compiled.php(9003): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#15 /home/user/projects/laravel/Hotel/app/Http/Middleware/Authenticate.php(47): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#16 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): App\Http\Middleware\Authenticate->handle(Object(Illuminate\Http\Request), Object(Closure))
+#17 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#18 /home/user/projects/laravel/Hotel/vendor/compiled.php(8986): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#19 /home/user/projects/laravel/Hotel/vendor/compiled.php(8385): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#20 /home/user/projects/laravel/Hotel/vendor/compiled.php(8371): Illuminate\Routing\ControllerDispatcher->callWithinStack(Object(App\Http\Controllers\DashboardController), Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'edit')
+#21 /home/user/projects/laravel/Hotel/vendor/compiled.php(7368): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'App\\Http\\Contro...', 'edit')
+#22 /home/user/projects/laravel/Hotel/vendor/compiled.php(7339): Illuminate\Routing\Route->runWithCustomDispatcher(Object(Illuminate\Http\Request))
+#23 /home/user/projects/laravel/Hotel/vendor/compiled.php(7005): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#24 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#25 /home/user/projects/laravel/Hotel/vendor/compiled.php(9003): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#26 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#27 /home/user/projects/laravel/Hotel/vendor/compiled.php(8986): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#28 /home/user/projects/laravel/Hotel/vendor/compiled.php(7006): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#29 /home/user/projects/laravel/Hotel/vendor/compiled.php(6995): Illuminate\Routing\Router->runRouteWithinStack(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#30 /home/user/projects/laravel/Hotel/vendor/compiled.php(6980): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#31 /home/user/projects/laravel/Hotel/vendor/compiled.php(1974): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#32 [internal function]: Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}(Object(Illuminate\Http\Request))
+#33 /home/user/projects/laravel/Hotel/vendor/compiled.php(9003): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#34 /home/user/projects/laravel/Hotel/vendor/compiled.php(2477): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#35 /home/user/projects/laravel/Hotel/app/Http/Middleware/VerifyCsrfToken.php(17): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#36 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): App\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#37 /home/user/projects/laravel/Hotel/vendor/compiled.php(12131): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#38 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\View\Middleware\ShareErrorsFromSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#39 /home/user/projects/laravel/Hotel/vendor/compiled.php(10833): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#40 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Session\Middleware\StartSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#41 /home/user/projects/laravel/Hotel/vendor/compiled.php(11837): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#42 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle(Object(Illuminate\Http\Request), Object(Closure))
+#43 /home/user/projects/laravel/Hotel/vendor/compiled.php(11786): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#44 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#45 /home/user/projects/laravel/Hotel/vendor/compiled.php(2517): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#46 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#47 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#48 /home/user/projects/laravel/Hotel/vendor/compiled.php(8986): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#49 /home/user/projects/laravel/Hotel/vendor/compiled.php(1930): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#50 /home/user/projects/laravel/Hotel/vendor/compiled.php(1917): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#51 /home/user/projects/laravel/Hotel/public/index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#52 /home/user/projects/laravel/Hotel/server.php(21): require_once('/home/user/proj...')
+#53 {main}
+
+Next exception 'Illuminate\Database\QueryException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column '1' in 'where clause' (SQL: select * from `items` where `1` = id limit 1)' in /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Connection.php:620
+Stack trace:
+#0 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(576): Illuminate\Database\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#1 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(293): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#2 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1377): Illuminate\Database\Connection->select('select * from `...', Array, true)
+#3 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1367): Illuminate\Database\Query\Builder->runSelect()
+#4 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1354): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 /home/user/projects/laravel/Hotel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1341): Illuminate\Database\Query\Builder->get(Array)
+#6 /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php(31): Illuminate\Database\Query\Builder->first()
+#7 [internal function]: App\Http\Controllers\DashboardController->edit('1')
+#8 /home/user/projects/laravel/Hotel/vendor/compiled.php(8338): call_user_func_array(Array, Array)
+#9 /home/user/projects/laravel/Hotel/vendor/compiled.php(8405): Illuminate\Routing\Controller->callAction('edit', Array)
+#10 /home/user/projects/laravel/Hotel/vendor/compiled.php(8384): Illuminate\Routing\ControllerDispatcher->call(Object(App\Http\Controllers\DashboardController), Object(Illuminate\Routing\Route), 'edit')
+#11 [internal function]: Illuminate\Routing\ControllerDispatcher->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#12 /home/user/projects/laravel/Hotel/vendor/compiled.php(9003): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#13 /home/user/projects/laravel/Hotel/app/Http/Middleware/Authenticate.php(47): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#14 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): App\Http\Middleware\Authenticate->handle(Object(Illuminate\Http\Request), Object(Closure))
+#15 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#16 /home/user/projects/laravel/Hotel/vendor/compiled.php(8986): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#17 /home/user/projects/laravel/Hotel/vendor/compiled.php(8385): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#18 /home/user/projects/laravel/Hotel/vendor/compiled.php(8371): Illuminate\Routing\ControllerDispatcher->callWithinStack(Object(App\Http\Controllers\DashboardController), Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'edit')
+#19 /home/user/projects/laravel/Hotel/vendor/compiled.php(7368): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'App\\Http\\Contro...', 'edit')
+#20 /home/user/projects/laravel/Hotel/vendor/compiled.php(7339): Illuminate\Routing\Route->runWithCustomDispatcher(Object(Illuminate\Http\Request))
+#21 /home/user/projects/laravel/Hotel/vendor/compiled.php(7005): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#22 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#23 /home/user/projects/laravel/Hotel/vendor/compiled.php(9003): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#24 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#25 /home/user/projects/laravel/Hotel/vendor/compiled.php(8986): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#26 /home/user/projects/laravel/Hotel/vendor/compiled.php(7006): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#27 /home/user/projects/laravel/Hotel/vendor/compiled.php(6995): Illuminate\Routing\Router->runRouteWithinStack(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#28 /home/user/projects/laravel/Hotel/vendor/compiled.php(6980): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#29 /home/user/projects/laravel/Hotel/vendor/compiled.php(1974): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#30 [internal function]: Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}(Object(Illuminate\Http\Request))
+#31 /home/user/projects/laravel/Hotel/vendor/compiled.php(9003): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#32 /home/user/projects/laravel/Hotel/vendor/compiled.php(2477): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#33 /home/user/projects/laravel/Hotel/app/Http/Middleware/VerifyCsrfToken.php(17): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#34 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): App\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#35 /home/user/projects/laravel/Hotel/vendor/compiled.php(12131): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#36 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\View\Middleware\ShareErrorsFromSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#37 /home/user/projects/laravel/Hotel/vendor/compiled.php(10833): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#38 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Session\Middleware\StartSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#39 /home/user/projects/laravel/Hotel/vendor/compiled.php(11837): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#40 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle(Object(Illuminate\Http\Request), Object(Closure))
+#41 /home/user/projects/laravel/Hotel/vendor/compiled.php(11786): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#42 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#43 /home/user/projects/laravel/Hotel/vendor/compiled.php(2517): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#44 /home/user/projects/laravel/Hotel/vendor/compiled.php(8995): Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#45 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#46 /home/user/projects/laravel/Hotel/vendor/compiled.php(8986): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#47 /home/user/projects/laravel/Hotel/vendor/compiled.php(1930): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#48 /home/user/projects/laravel/Hotel/vendor/compiled.php(1917): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#49 /home/user/projects/laravel/Hotel/public/index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#50 /home/user/projects/laravel/Hotel/server.php(21): require_once('/home/user/proj...')
+#51 {main}  
+[2015-04-23 08:14:48] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:48] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:48] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:48] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:48] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:48] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:48] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:48] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:48] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:48] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:48] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:48] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:48] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:48] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:48] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:48] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:48] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:48] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:48] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:48] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:51] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:51] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:51] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:51] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:51] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:51] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:51] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:51] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:51] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:51] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:51] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:51] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:51] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:51] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:51] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:51] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:51] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:51] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:51] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:51] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:51] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:52] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:52] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:52] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:52] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:52] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:52] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:52] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:52] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:52] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:52] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:52] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:52] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:52] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:52] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:52] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:52] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:52] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:52] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:52] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:52] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:14:52] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:18:07] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:18:07] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:18:07] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:18:07] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:18:07] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:18:08] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:18:08] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:18:08] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:18:08] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:18:08] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:18:08] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:18:08] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:18:08] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:18:08] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:18:08] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:18:08] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:18:08] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:18:08] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:18:08] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:18:08] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  
+[2015-04-23 08:18:08] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /home/user/projects/laravel/Hotel/app/Http/Controllers/DashboardController.php:33
+Stack trace:
+#0 {main}  

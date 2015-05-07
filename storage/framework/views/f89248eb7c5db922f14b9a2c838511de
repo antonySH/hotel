@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="_token" content="<?php echo e(csrf_token()); ?>" />
+        <title><?php echo $__env->yieldContent('title', app_name()); ?></title>
+        <meta name="description" content="<?php echo $__env->yieldContent('meta_description', 'Default Description'); ?>">
+        <meta name="author" content="<?php echo $__env->yieldContent('author', 'Anthony Rappa'); ?>">
+        <?php echo $__env->yieldContent('meta'); ?>
+
+        <?php echo $__env->yieldContent('before-styles-end'); ?>
+        <?php echo HTML::style(elixir('css/all.css')); ?>
+
+        <?php echo $__env->yieldContent('after-styles-end'); ?>
+
+        <!-- Fonts -->
+        <link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+
+        <!-- Icons-->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <?php echo HTML::script("js/vendor/modernizr-2.8.3.min.js"); ?>
+
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <?php echo $__env->make('includes.nav', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+        <div class="container-fluid">
+            <?php echo $__env->make('includes.partials.messages', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+            <?php echo $__env->yieldContent('content'); ?>
+        </div><!-- container -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="<?php echo e(asset('js/vendor/jquery-1.11.2.min.js')); ?>"><\/script>')</script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+        <?php echo $__env->yieldContent('before-scripts-end'); ?>
+        <?php echo HTML::script(elixir('js/all.js')); ?>
+
+        <?php echo $__env->yieldContent('after-scripts-end'); ?>
+
+        <?php echo $__env->make('includes.partials.ga', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<?php $__env->startSection('content'); ?>
+	<div class="row">
+
+		<div class="col-md-8 col-md-offset-2">
+
+			<div class="panel panel-default">
+
+				<div class="panel-heading">Reset Password</div>
+
+				<div class="panel-body">
+					<?php if(session('status')): ?>
+						<div class="alert alert-success">
+							<?php echo e(session('status')); ?>
+
+						</div>
+					<?php endif; ?>
+
+					<?php echo Form::open(['to' => 'password/email', 'class' => 'form-horizontal', 'role' => 'form']); ?>
+
+
+						<div class="form-group">
+							<label class="col-md-4 control-label">E-mail Address</label>
+							<div class="col-md-6">
+								<?php echo Form::input('email', 'email', old('email'), ['class' => 'form-control']); ?>
+
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-md-6 col-md-offset-4">
+								<?php echo Form::submit('Send Password Reset Link', ['class' => 'btn btn-primary']); ?>
+
+							</div>
+						</div>
+
+					<?php echo Form::close(); ?>
+
+
+				</div><!-- panel body -->
+
+            </div><!-- panel -->
+
+        </div><!-- col-md-8 -->
+
+    </div><!-- row -->
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
